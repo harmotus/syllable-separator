@@ -1,0 +1,140 @@
+* {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	font-size: 16px;
+	line-height: 1.2;
+	list-style: none;
+	list-style-type:none;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+}
+
+html {
+	max-height: 100%;
+}
+
+body {
+	color: #000000;
+	max-width: 100%;
+	background-color: #f5f5f5;
+}
+
+#main {
+	display: flex;
+	height: 100vh;
+	max-width: 100%;
+	margin: 0 1.20em;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#menu {
+	width: 100%;
+	display: flex;
+	padding-top: 1.20em;
+	flex-direction: row;
+}
+
+#menu-A {
+	display: inline-block;
+}
+
+#menu-B {
+	display: none;
+}
+
+#menu-C {
+	display: none;
+}
+
+#menu-back {
+	display: none;
+}
+
+#menu-hide {
+	left: 1.20em;
+	width: 1.2em;
+	z-index: 120;
+	bottom: 1.20em;
+	cursor: pointer;
+	position: fixed;
+	display: inline-block;
+}
+
+.buttons {
+	width: 6.0em;
+	height: 2.70em;
+	color: #000000;
+	cursor: pointer;
+	font-size: 1rem;
+	align-items: center;
+	display: inline-block;
+	border: 1px solid #999999;
+	background-color: #fbfbfb;
+}
+
+#buttonSizeUp {
+	width: 3.0em;
+	border-right-style: none;
+}
+
+#buttonSizeDown {
+	width: 3.0em;
+}
+
+.spanBreak1 {
+	margin: 0 0.3em;
+	display: inline-block;
+}
+
+.spanBreak2 {
+	margin: 0 0.3em;
+	display: inline-block;
+}
+
+#area {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	padding: 1.20em 0;
+	flex-direction: row;
+}
+
+#area-text {
+	width: 100%;
+	height: 100%;
+	outline: none;
+	color: #181818;
+	padding: 0.75em;
+	max-height: 100%;
+	line-height: 1.5;
+	overflow-y: auto;
+	overflow-x: hidden;
+	scrollbar-width: thin;
+	border: 1px solid #999999;
+	background-color: #fbfbfb;
+	scrollbar-color: #c9c9c9 #fbfbfb;
+}
+
+@media (max-width: 230px) {
+	.spanBreak2 {
+		width: 0;
+		margin: 0;
+		height: 0.36em;
+		display: block;
+	}
+	#menu {
+		justify-content: space-around;
+	}
+}
+
+@media (max-width: 100px) {
+	.spanBreak1 {
+		width: 0;
+		height: 0.36em;
+		display: block;
+	}
+}

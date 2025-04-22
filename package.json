@@ -1,0 +1,49 @@
+{
+  "name": "syllable-separator",
+  "version": "1.0.0",
+  "description": "A simple syllable separator for text in Spanish ( ideal for learning or teaching Spanish )",
+  "main": "js/syllable-separator.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "keywords": [
+    "syllable",
+    "syllables",
+    "separator",
+    "word",
+    "text",
+    "spanish",
+    "hiatus",
+    "diphthong",
+    "triphthong",
+    "javascript",
+    "html5",
+    "sílaba",
+    "sílabas",
+    "separador",
+    "palabra",
+    "texto",
+    "español",
+    "hiato",
+    "diptongo",
+    "triptongo"
+  ],
+  "author": "Harmotus",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harmotus/syllable-separator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/harmotus/syllable-separator/issues"
+  },
+  "homepage": "https://github.com/harmotus/syllable-separator#readme",
+  "devDependencies": {
+    "chai": "^4.5.0",
+    "mocha": "^11.1.0"
+  }
+}

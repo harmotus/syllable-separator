@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Harmotus">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../fav/favicon.svg">
+	<title>Docs</title>
+	<style>
+		*{border:0;margin:0;padding:0;outline:0;font-size:16px;line-height:1.2;list-style:none;list-style-type:none;text-decoration:none;box-sizing:border-box;font-family:sans-serif}
+		body{margin:3em 6em;background-color:#fff}
+		h1{font-size:1.8rem;margin:1.2em 0}
+		h2{font-size:1.5rem;margin:1.5em 0}
+		h1,h2{color:#0f0f0f;font-weight:700}
+		p{margin:1.2em 0}
+		p.space{margin-bottom:-0.9em}
+		p{max-width:946px;text-align:justify}
+		pre{background-color:#f3f3f3;border:1px solid #ddd;padding:.9em 0}
+		code{max-width:946px;padding-left:1.8em;line-height:1.8;font-family:monospace}
+		img{width:100%;height:auto;margin:auto;border:none;outline:none;display:block;max-width:946px;box-sizing:border-box}
+		div{margin:0;width:100%;height:auto;line-height:0;display:block;max-width:946px}
+		@media (max-width: 1200px) {
+			body{margin:3em .9em 3em .6em}
+		}
+	</style>
+</head>
+<body>
+	<h1>Syllable Separator</h1>
+	<p>A simple syllable separator for text in Spanish ( ideal for learning or teaching Spanish )</p>
+	<h2>Screenshots</h2>
+	<div><img src="light.png" alt="light-theme"></div><br>
+	<div><img src="dark.png" alt="dark-theme"></div>
+	<h2>Description</h2>
+	<p>The script separates into syllables the words that contain the letters: aeiou áéíóúü bcdfghjklmnñpqrstvwxyz.</p>
+	<p class="space">Except for the following exceptions:</p>
+	<p class="space">&#8226; Words ( non-native or special ) that begin with . ( dot ) For example: .beatles, .jeans, etc.</p>
+	<p class="space">&#8226; Words containing the special characters ( # @ ) For example: #tarde, no@che, etc.</p>
+	<p>&#8226; Words enclosed in braces { ... } For example: a.que.lla&nbsp;&nbsp;fru.ta&nbsp;&nbsp;{ roja y madura }</p>
+	<p>The script processes words that are partially separated into syllables. For example: sub-lunar, to sub.lu.nar</p>
+	<p class="space">The script also contains a dictionary of words that do not follow the general rules. For example: fluía, to flu.í.a</p>
+	<p>There are several words that do not follow these rules, so the content of this dictionary will expand over time.</p>
+	<h2>Installation</h2>
+	<pre><code>npm i syllable-separator</code></pre>
+	<h2>Usage</h2>
+	<pre><code>let text = 'Lo que sabemos es una gota y lo que ignoramos es un océano';</code><br><code>let syllable = require('syllable-separator');</code><br><code>let splittext = syllable.Separator(text);</code><br><br><code>console.log(splittext);</code><br><br><code>// lo  que  sa.be.mos  es  u.na  go.ta  y  lo  que  ig.no.ra.mos  es  un  o.cé.a.no</code></pre>
+	<h2>Test</h2>
+	<pre><code>npm test</code></pre>
+	<h2>Demo</h2>
+	<div><a href="https://harmotus.github.io/syllable-separator">HOME</a></div>
+	<h2>License</h2>
+	<div><a href="https://opensource.org/license/mit">MIT</a></div>
+</body>
+</html>

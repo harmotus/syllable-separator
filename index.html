@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Harmotus">
+	<meta name="robots" content="index, follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="fav/favicon.svg">
+	<title>Syllable Separator</title>
+</head>
+<body>
+	<div id="main">
+		<div id="menu">
+			<div id="menu-A">
+				<button class="buttons" id="Split" onclick="mySplit();">Split</button><span class="spanBreak1">&nbsp;</span><button class="buttons" id="Clear" onclick="myClear();">Clear</button><span class="spanBreak2">&nbsp;</span><button class="buttons" id="Copy" onclick="myCopy();">Copy</button><span class="spanBreak1">&nbsp;</span><button class="buttons" onclick="myPanel();">Panel</button>
+			</div>
+			<div id="menu-B">
+				<button class="buttons" id="Theme" onclick="myTheme();">Dark</button><span class="spanBreak1">&nbsp;</span><button class="buttons" id="Font" onclick="myFont();">Font</button><span class="spanBreak2">&nbsp;</span><button class="buttons" id="buttonSizeUp" onclick="myFontSizeUp();">+</button><button class="buttons" id="buttonSizeDown" onclick="myFontSizeDown();">&#8211;</button><span class="spanBreak1">&nbsp;</span><button class="buttons" id="menu-next" onclick="myPanel();">Next</button><button class="buttons" id="menu-back" onclick="myPanel();">Back</button>
+			</div>
+			<div id="menu-C">
+				<button class="buttons" id="Help" onclick="myHelp();">Help</button><span class="spanBreak1">&nbsp;</span><button class="buttons" id="Data" onclick="myData();">Data</button><span class="spanBreak2">&nbsp;</span><button class="buttons" id="Web" onclick="myWeb();">Web</button><span class="spanBreak1">&nbsp;</span><button class="buttons" onclick="myPanel();">Main</button>
+			</div>
+		</div>
+		<div id="area">
+			<textarea id="area-text" rows="1" cols="12" spellcheck="false" placeholder="Enter text here and click the 'Split' button"></textarea>
+		</div>
+	</div>
+	<span id="menu-hide" onclick="myMenuHide();">&nbsp;&#187;&nbsp;</span>
+	<script src="js/reader.js"></script>
+	<script src="js/syllable.js"></script>
+</body>
+</html>
